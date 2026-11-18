@@ -67,8 +67,13 @@ coverage/
 .nyc_output/
 
 # =================
-# ENVIRONMENT
+# ENVIRONMENT & SECRETS
 # =================
 .env
-.env.local
-.env.*.local
+.env*
+!.env.example
+!.env.aws.example
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
